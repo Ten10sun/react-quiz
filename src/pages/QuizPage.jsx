@@ -4,7 +4,6 @@ import Display from '../components/Display/Display'
 import Button from '../components/Button/Button'
 import quizData from '../data/quiz'
 import ROUTES from '../const'
-import styles from './Quizpage.module.css'
 
 export default function QuizPage() {
 const [quizIndex, setQuizIndex] = useState(0);
