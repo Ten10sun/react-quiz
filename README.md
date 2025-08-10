@@ -1,8 +1,76 @@
-# React + Vite
+# React クイズアプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+Reactで作成されたインタラクティブなクイズアプリケーションです。問題を追加していくことで、様々なジャンルのクイズに挑戦しスコアを競うことができます。
 
-Currently, two official plugins are available:
+## 特徴
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- シンプルで直感的なユーザーインターフェース
+- リアルタイムでのスコア表示
+- レスポンシブデザインでスマートフォンからも快適に利用可能
+
+## 技術スタック
+
+- React 19
+- React Router v7
+- Vite
+- CSS Modules
+- React Confetti（正解時の演出用）
+
+## インストール方法
+
+1. リポジトリをクローンします
+   ```bash
+   git clone [リポジトリのURL]
+   cd react-quiz
+   ```
+
+2. 依存パッケージをインストールします
+   ```bash
+   npm install
+   ```
+
+3. 開発サーバーを起動します
+   ```bash
+   npm run dev
+   ```
+
+4. ブラウザで `http://localhost:5173` を開きます
+
+## ビルド方法
+
+本番用にビルドするには以下のコマンドを実行します：
+
+```bash
+npm run build
+```
+
+ビルドされたファイルは `dist` ディレクトリに出力されます。
+
+## プロジェクト構成
+
+```
+src/
+├── assets/          # 画像やフォントなどの静的ファイル
+├── components/      # 再利用可能なコンポーネント
+│   ├── Button/      # ボタンコンポーネント
+│   ├── Display/     # 表示用コンポーネント
+│   ├── Loading/     # ローディングコンポーネント
+│   └── Result/      # 結果表示コンポーネント
+├── data/            # クイズデータ
+├── pages/           # ページコンポーネント
+│   ├── HomePage.jsx # ホームページ
+│   ├── QuizPage.jsx # クイズページ
+│   └── ResultPage.jsx # 結果ページ
+├── App.jsx         # メインアプリケーションコンポーネント
+└── main.jsx        # エントリーポイント
+```
+
+## ライセンス
+
+このプロジェクトはオープンソースソフトウェアです。
+
+## 作者
+
+Ten10sun
+
